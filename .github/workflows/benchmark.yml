@@ -9,7 +9,7 @@ on:
         type: string
         description: "Minecraft version"
         required: false
-        default: "snapshot"
+        default: "1.20.4"
       warmup_iterations:
         type: number
         description: "Number of warmup iterations"
@@ -49,6 +49,7 @@ on:
 jobs:
   benchmark:
     runs-on: ubuntu-latest
+    timeout-minutes: 180
     steps:
       - name: チェックアウト
         uses: actions/checkout@v7
