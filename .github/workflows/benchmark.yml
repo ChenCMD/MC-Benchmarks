@@ -34,7 +34,7 @@ on:
         type: choice
         description: "Output time unit"
         required: false
-        default: us
+        default: ns
         options: [ ns, us, ms, s, m ]
       mc_args:
         type: string
